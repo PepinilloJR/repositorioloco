@@ -30,14 +30,14 @@ app.use((req, res, next) => {
 })
 
 
-const PORT = 
+const PORT = process.env.PORT ?? 1234
 
 
 
 
 
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
     console.log("sas escuchando en http://localhost:4000 lmaoooo" )
 })
 
