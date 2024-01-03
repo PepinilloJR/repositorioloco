@@ -6,9 +6,7 @@ app.disable('x-powered-by')
 
 
 
-//const puerto = process.env.PORT ?? 1234
-const puerto = 1234
-
+const puerto = process.env.PORT ?? 1234
 app.use((req,res,next) => {
     CorsConf2(req,res)
     console.log('xd')
