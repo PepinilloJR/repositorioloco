@@ -5,7 +5,11 @@ export const CorsConf = (/*ingresar opciones o parametros para cambiar conf del 
     origin: (origin, callback) => {
         const origenesAceptados = [
             'http://localhost:5174',
-            'http://localhost:5173'
+            'http://localhost:5173',
+            'https://pepinillojr.github.io/front-prueba',
+		    'https://pepinillojr.github.io/front-prueba/#/get',
+		    'https://pepinillojr.github.io/front-prueba/#/post',
+		    'https://pepinillojr.github.io/front-prueba/#'
         ]
         console.log(origin)
         if (origenesAceptados.includes(origin)) {
@@ -24,7 +28,12 @@ export const CorsConf2 = (req,res) => {
     const ACCEPTED_ORIGINS = [
         'http://localhost:5174',
         'http://localhost:5173',
-		'https://pepinillojr.github.io/front-prueba'
+		'https://pepinillojr.github.io/front-prueba',
+		'https://pepinillojr.github.io/front-prueba/#/get',
+		'https://pepinillojr.github.io/front-prueba/#/post',
+		'https://pepinillojr.github.io/front-prueba/#',
+        'https://pepinillojr.github.io'
+		
     ]
     // accedo al origen
     const origen = req.header('origin')
