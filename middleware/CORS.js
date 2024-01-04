@@ -23,7 +23,8 @@ export const CorsConf2 = (req,res) => {
     // ahora sin usar el CORS
     const ACCEPTED_ORIGINS = [
         'http://localhost:5174',
-        'http://localhost:5173'
+        'http://localhost:5173',
+		'https://pepinillojr.github.io/front-prueba'
     ]
     // accedo al origen
     const origen = req.header('origin')

@@ -3,7 +3,7 @@ import { Menu } from "./menu";
 
 async function postearImagenes(nombreO, esGrandeO) {
     try {
-        await fetch('http://localhost:1234/imagenes', {
+        await fetch('https://repositorioloco-dev-mpaq.2.us-1.fl0.io/imagenes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

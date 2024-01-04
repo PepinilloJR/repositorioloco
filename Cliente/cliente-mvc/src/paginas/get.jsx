@@ -5,9 +5,9 @@ async function recibirImagenes(id) {
     try {
         let response
         if (id != "") {
-            response = await fetch(`http://localhost:1234/imagenes/${id}`) 
+            response = await fetch(`https://repositorioloco-dev-mpaq.2.us-1.fl0.io/imagenes/${id}`) 
         } else {
-            response = await fetch('http://localhost:1234/imagenes/-1')
+            response = await fetch('https://repositorioloco-dev-mpaq.2.us-1.fl0.io/imagenes/-1')
         }
         const lista = await response.json()
         console.log(lista)
